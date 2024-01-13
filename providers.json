@@ -2,12 +2,12 @@
     "subscribes":[
         {
             "url": "URL",
-            "tag": "tag_1",
+            "tag": "FlowerCloud",
             "enabled": true,
-            "emoji": 1,
+            "emoji": 0,
             "subgroup": "",
             "prefix": "",
-            "User-Agent":"v2rayng"
+            "User-Agent":"clashmeta"
         },
         {
             "url": "URL",
@@ -16,11 +16,11 @@
             "emoji": 0,
             "subgroup": "命名/named",
             "prefix": "❤️",
-            "User-Agent":"clashmeta"
+            "User-Agent":"v2rayng"
         }
     ],
     "auto_set_outbounds_dns":{
-        "proxy": "",
+        "Proxy": "",
         "direct": ""
     },
     "save_config_path": "./config.json",
