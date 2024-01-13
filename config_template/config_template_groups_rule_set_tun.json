@@ -522,7 +522,7 @@
       },
       {
         "rule_set": "geosite-twitter",
-        "rule_set": "Global"
+        "outbound": "Global"
       },
       {
         "rule_set": "geoip-twitter",
