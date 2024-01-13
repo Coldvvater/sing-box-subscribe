@@ -493,7 +493,7 @@
         "outbound": "BiliBili"
       },
       {
-        "rule_set": "spotify",
+        "rule_set": "geosite-spotify",
         "outbound": "Spotify"
       },
       {
