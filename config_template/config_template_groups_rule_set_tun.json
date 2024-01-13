@@ -7,7 +7,7 @@
     "clash_api": {
       "external_controller": "127.0.0.1:9090",
       "external_ui": "ui",
-      "secret": "ColdNeko",
+      "secret": "",
       "external_ui_download_url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip",
       "external_ui_download_detour": "direct",
       "default_mode": "rule"
@@ -126,7 +126,7 @@
         "{all}"
       ], 
       "filter":[ 
-        {"action":"exclude","keywords":["Traffic|Expire"],"for":["FlowerCloud"]} 
+        {"action":"exclude","keywords":["Traffic|Expire"],"for":["机场1"]} 
       ], 
       "url": "http://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -274,8 +274,8 @@
       "tag":"Speedtest",
       "type":"selector",
       "outbounds":[
-        "direct",
-        "Proxy"
+        "Proxy",
+        "direct"
       ]
     },
     {
@@ -346,7 +346,7 @@
       ],
       "filter":[
         {"action":"include","keywords":["🇭🇰|HK|hk|香港"]},
-        {"action":"exclude","keywords":["Traffic|Expire"],"for":["FlowerCloud"]}
+        {"action":"exclude","keywords":["Traffic|Expire"],"for":["机场1"]}
       ]
     },
     {
@@ -357,7 +357,7 @@
       ],
       "filter":[
         {"action":"include","keywords":["🇹🇼|TW|tw|台湾|台灣"]},
-        {"action":"exclude","keywords":["Traffic|Expire"],"for":["FlowerCloud"]}
+        {"action":"exclude","keywords":["Traffic|Expire"],"for":["机场1"]}
       ]
     },
     {
@@ -368,7 +368,7 @@
       ],
       "filter":[
         {"action":"include","keywords":["🇸🇬|SG|sg|新加坡|狮"]},
-        {"action":"exclude","keywords":["Traffic|Expire"],"for":["FlowerCloud"]}
+        {"action":"exclude","keywords":["Traffic|Expire"],"for":["机场1"]}
       ]
     },
     {
@@ -379,7 +379,7 @@
       ],
       "filter":[
         {"action":"include","keywords":["🇯🇵|jp|JP|日本"]},
-        {"action":"exclude","keywords":["Traffic|Expire"],"for":["FlowerCloud"]}
+        {"action":"exclude","keywords":["Traffic|Expire"],"for":["机场1"]}
       ]
     },
     {
@@ -390,7 +390,7 @@
       ],
       "filter":[
         {"action":"include","keywords":["🇺🇸|us|US|美国|美國"]},
-        {"action":"exclude","keywords":["Traffic|Expire"],"for":["FlowerCloud"]}
+        {"action":"exclude","keywords":["Traffic|Expire"],"for":["机场1"]}
       ]
     },
     {
@@ -400,7 +400,7 @@
         "{all}"
       ],
       "filter":[
-        {"action":"exclude","keywords":["🇭🇰|HK|hk|香港|香|🇹🇼|TW|tw|台湾|台|台灣|🇸🇬|SG|sg|新加坡|狮|🇯🇵|JP|jp|日本|日|🇺🇸|US|us|美国|美|美國|网站|剩余|流量|过期|时间|期|地址|Traffic|Expire"],"for":["FlowerCloud"]}
+        {"action":"exclude","keywords":["🇭🇰|HK|hk|香港|香|🇹🇼|TW|tw|台湾|台|台灣|🇸🇬|SG|sg|新加坡|狮|🇯🇵|JP|jp|日本|日|🇺🇸|US|us|美国|美|美國|网站|剩余|流量|过期|时间|期|地址|Traffic|Expire"],"for":["机场1"]}
       ]
     },
     {
