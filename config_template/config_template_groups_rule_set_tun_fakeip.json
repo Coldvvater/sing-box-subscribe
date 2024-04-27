@@ -298,7 +298,38 @@
         "outbound": "global"
       },
       {
-        "rule_set": "mixed-apple",
+        "domain": [
+          "amp-api.podcasts.apple.com",
+          "beta.music.apple.com",
+          "books.itunes.apple.com",
+          "facetime.apple.com",
+          "lookup-api.apple.com",
+          "radio.itunes.apple.com",
+          "apps.apple.com",
+          "books.apple.com",
+          "itunes.apple.com",
+          "tv.apple.com",
+          "gateway.icloud.com",
+          "news-assets.apple.com",
+          "news-client.apple.com",
+          "news-client-search.apple.com",
+          "news-edge.apple.com",
+          "news-events.apple.com",
+          "apple.comscoreresearch.com",
+          "beta.apple.com",
+          "testflight.apple.com"
+        ],
+        "outbound": "global"
+      },
+      {
+        "domain_suffix": [
+          "apple.news",
+          "appsto.re"
+        ],
+        "outbound": "global"
+      },
+      {
+        "domain_keyword": "testflight",
         "outbound": "global"
       },
       {
@@ -471,13 +502,6 @@
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/twitter.srs",
         "download_detour": "direct"
-      },
-      {
-        "tag": "mixed-apple",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://github.com/Coldvvater/sing-box-geosite/raw/main/rule/AppleProxyService.srs",
-        "download_detour": "proxy"
       },
       {
         "tag": "geoip-apple",
