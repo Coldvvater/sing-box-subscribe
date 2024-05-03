@@ -34,8 +34,8 @@
         "domain_suffix": [
           "appcenter.ms",
           "app-measurement.com",
-          "firebase.io",
           "crashlytics.com",
+          "firebase.io",
           "google-analytics.com"
         ],
         "disable_cache": true,
@@ -113,8 +113,8 @@
         "domain_suffix": [
           "appcenter.ms",
           "app-measurement.com",
-          "firebase.io",
           "crashlytics.com",
+          "firebase.io",
           "google-analytics.com"
         ],
         "outbound": "block"
@@ -122,9 +122,10 @@
       {
         "domain": [
           "clash.razord.top",
-          "yacd.metacubex.one",
+          "d.metacubex.one",
           "yacd.haishan.me",
-          "d.metacubex.one"
+          "yacd.metacubex.one",
+          "iface.clipber.com"
         ],
         "outbound": "direct"
       },
