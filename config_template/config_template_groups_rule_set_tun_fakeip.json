@@ -138,10 +138,6 @@
         "outbound": "direct"
       },
       {
-        "rule_set": "geosite-speedtest",
-        "outbound": "speedtest"
-      },
-      {
         "domain": [
           "api.statsig.com",
           "browser-intake-datadoghq.com",
@@ -292,11 +288,11 @@
       },
       {
         "rule_set": "geoip-twitter",
-        "outbound": "global"
+        "outbound": "twitter"
       },
       {
         "rule_set": "geosite-twitter",
-        "outbound": "global"
+        "outbound": "twitter"
       },
       {
         "domain": [
@@ -383,13 +379,6 @@
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/private.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-speedtest",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/speedtest.srs",
         "download_detour": "direct"
       },
       {
@@ -742,6 +731,20 @@
       ]
     },
     {
+      "tag": "twitter",
+      "type": "selector",
+      "outbounds": [
+        "proxy",
+        "auto",
+        "hongkong",
+        "taiwan",
+        "singapore",
+        "japan",
+        "america",
+        "others"
+      ]
+    },
+    {
       "tag":"apple",
       "type":"selector",
       "outbounds":[
@@ -799,14 +802,6 @@
         "japan",
         "america",
         "others"
-      ]
-    },
-    {
-      "tag": "speedtest",
-      "type": "selector",
-      "outbounds": [
-        "proxy",
-        "direct"
       ]
     },
     {
