@@ -152,7 +152,7 @@
           "production-openaicom-storage.azureedge.net",
           "static.cloudflareinsights.com"
         ],
-        "outbound": "openai"
+        "outbound": "ai"
       },
       {
         "domain_suffix": [
@@ -177,11 +177,11 @@
           ".sentry.io",
           ".stripe.com"
         ],
-        "outbound": "openai"
+        "outbound": "ai"
       },
       {
         "domain_keyword": "openaicom-api",
-        "outbound": "openai"
+        "outbound": "ai"
       },
       {
         "domain": [
@@ -193,22 +193,22 @@
           "sydney.bing.com",
           "www.bingapis.com"
         ],
-        "outbound": "openai"
+        "outbound": "ai"
       },
       {
         "domain_suffix": ".clarity.ms",
-        "outbound": "openai"
+        "outbound": "ai"
       },
       {
         "domain": [
           "bard.google.com",
           "gemini.google.com"
         ],
-        "outbound": "openai"
+        "outbound": "ai"
       },
       {
         "domain": "claude.ai",
-        "outbound": "openai"
+        "outbound": "ai"
       },
       {
         "domain_suffix": ".anthropic.com",
@@ -216,19 +216,19 @@
       },
       {
         "domain": "imagine.meta.com",
-        "outbound": "openai"
+        "outbound": "ai"
       },
       {
         "domain_suffix": ".meta.ai",
-        "outbound": "openai"
+        "outbound": "ai"
       },
       {
         "domain_suffix": ".grazie.ai",
-        "outbound": "openai"
+        "outbound": "ai"
       },
       {
         "domain_suffix": ".groq.com",
-        "outbound": "openai"
+        "outbound": "ai"
       },
       {
         "rule_set": "geosite-youtube",
@@ -611,7 +611,7 @@
       ]
     },
     {
-      "tag":"openai",
+      "tag":"ai",
       "type":"selector",
       "outbounds":[
         "america",
