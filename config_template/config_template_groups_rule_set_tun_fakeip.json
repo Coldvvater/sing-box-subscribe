@@ -115,7 +115,9 @@
           "app-measurement.com",
           "crashlytics.com",
           "firebase.io",
-          "google-analytics.com"
+          "google-analytics.com",
+          "mi.gdt.qq.com",
+          "sdk.e.aq.com"
         ],
         "outbound": "block"
       },
