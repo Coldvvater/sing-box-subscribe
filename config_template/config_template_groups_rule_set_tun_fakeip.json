@@ -160,7 +160,7 @@
         "domain_suffix": [
           ".algolia.net",
           ".auth0.co",
-          ".chatgpt.com",
+          "chatgpt.com",
           ".challenges.cloudflare.com",
           ".client-api.arkoselabs.com",
           ".events.statsigapi.net",
