@@ -209,11 +209,10 @@
         "outbound": "ai"
       },
       {
-        "domain": "claude.ai",
-        "outbound": "ai"
-      },
-      {
-        "domain_suffix": ".anthropic.com",
+        "domain_suffix": [
+          ".anthropic.com",
+          "claude.ai"
+        ],
         "outbound": "ai"
       },
       {
