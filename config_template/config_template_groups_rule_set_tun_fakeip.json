@@ -225,7 +225,7 @@
         "outbound": "ai"
       },
       {
-        "domain_suffix": ".meta.ai",
+        "domain_suffix": "meta.ai",
         "outbound": "ai"
       },
       {
@@ -233,7 +233,7 @@
         "outbound": "ai"
       },
       {
-        "domain_suffix": ".groq.com",
+        "domain_suffix": "groq.com",
         "outbound": "ai"
       },
       {
