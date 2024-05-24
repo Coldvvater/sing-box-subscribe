@@ -229,7 +229,10 @@
         "outbound": "ai"
       },
       {
-        "domain_suffix": ".grazie.ai",
+        "domain_suffix": [
+          "grazie.ai",
+          ".grazie.aws.intellij.net"
+        ],
         "outbound": "ai"
       },
       {
