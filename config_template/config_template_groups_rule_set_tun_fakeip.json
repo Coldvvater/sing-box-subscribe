@@ -177,12 +177,16 @@
           ".openaicom.imgix.net",
           ".segment.io",
           ".sentry.io",
-          ".stripe.com"
+          ".stripe.com",
+          ".webpubsub.azure.com"
         ],
         "outbound": "ai"
       },
       {
-        "domain_keyword": "openaicom-api",
+        "domain_keyword": [
+          "chatgpt-async-webps-prod-eastus-",
+          "openaicom-api"
+        ],
         "outbound": "ai"
       },
       {
