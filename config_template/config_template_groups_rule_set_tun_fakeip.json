@@ -426,8 +426,8 @@
         "tag": "mixed-emby",
         "type": "remote",
         "format": "binary",
-        "url": "https://github.com/Coldvvater/sing-box-geosite/raw/main/rule/Emby.srs",
-        "download_detour": "proxy"
+        "url": "https://testingcf.jsdelivr.net/gh/Coldvvater/sing-box-geosite@main/rule/Emby.srs",
+        "download_detour": "direct"
       },
       {
         "tag": "geosite-bahamut",
@@ -468,8 +468,8 @@
         "tag": "mixed-tiktok",
         "type": "remote",
         "format": "binary",
-        "url": "https://github.com/Coldvvater/sing-box-geosite/raw/main/rule/TikTok.srs",
-        "download_detour": "proxy"
+        "url": "https://testingcf.jsdelivr.net/gh/Coldvvater/sing-box-geosite@main/rule/TikTok.srs",
+        "download_detour": "direct"
       },
       {
         "tag": "geoip-telegram",
