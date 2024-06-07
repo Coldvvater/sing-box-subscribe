@@ -13,7 +13,7 @@
       },
       {
         "tag": "alidns",
-        "address": "https://120.53.53.53/dns-quer",
+        "address": "https://120.53.53.53/dns-query",
         "detour": "direct"
       },
       {
