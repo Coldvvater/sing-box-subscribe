@@ -27,16 +27,21 @@
     ],
     "rules": [
       {
-        "rule_set": "geosite-category-ads-all",
-        "server": "block"
-      },
-      {
-        "domain_suffix": [
-          "appcenter.ms",
-          "app-measurement.com",
-          "crashlytics.com",
-          "firebase.io",
-          "google-analytics.com"
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "rule_set": "geosite-category-ads-all"
+          },
+          {
+            "domain_suffix": [
+              "appcenter.ms",
+              "app-measurement.com",
+              "firebase.io",
+              "crashlytics.com",
+              "google-analytics.com"
+            ]
+          }
         ],
         "disable_cache": true,
         "server": "block"
@@ -94,22 +99,25 @@
         "outbound": "proxy"
       },
       {
-        "rule_set": "geosite-category-ads-all",
-        "outbound": "block"
-      },
-      {
-        "domain_regex": "^stun\\..+",
-        "outbound": "block"
-      },
-      {
-        "domain_keyword": [
-          "stun",
-          "httpdns"
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "rule_set": "geosite-category-ads-all"
+          },
+          {
+            "domain_regex": "^stun\\..+"
+          },
+          {
+            "domain_keyword": [
+              "stun",
+              "httpdns"
+            ]
+          },
+          {
+            "protocol": "stun"
+          }
         ],
-        "outbound": "block"
-      },
-      {
-        "protocol": "stun",
         "outbound": "block"
       },
       {
