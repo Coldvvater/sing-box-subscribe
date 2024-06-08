@@ -47,12 +47,16 @@
         "disable_cache": true
       },
       {
+        "rule_set": "geosite-cn",
+        "server": "alidns"
+      },
+      {
         "clash_mode": "Direct",
         "server": "alidns"
       },
       {
         "clash_mode": "Global",
-        "server": "fakeip"
+        "server": "google"
       },
       {
         "query_type": [
@@ -63,11 +67,10 @@
         "rewrite_ttl": 1
       },
       {
-        "rule_set": "geosite-cn",
-        "server": "alidns"
+        "rule_set": "geosite-geolocation-!cn",
+        "server": "google"
       }
     ],
-    "final": "google",
     "independent_cache": true,
     "strategy": "prefer_ipv4"
   },
