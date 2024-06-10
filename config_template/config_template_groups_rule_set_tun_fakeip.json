@@ -259,11 +259,10 @@
         "outbound": "youtube"
       },
       {
-        "rule_set": "geosite-netflix",
-        "outbound": "NETFLIX"
-      },
-      {
-        "rule_set": "geoip-netflix",
+        "rule_set": [
+          "geoip-netflix",
+          "geosite-netflix"
+        ],
         "outbound": "NETFLIX"
       },
       {
@@ -283,11 +282,10 @@
         "outbound": "proxy"
       },
       {
-        "rule_set": "geoip-bilibili",
-        "outbound": "bilibili"
-      },
-      {
-        "rule_set": "geosite-bilibili",
+        "rule_set": [
+          "geoip-bilibili",
+          "geosite-bilibili"
+        ],
         "outbound": "bilibili"
       },
       {
@@ -299,11 +297,10 @@
         "outbound": "tiktok"
       },
       {
-        "rule_set": "geoip-telegram",
-        "outbound": "telegram"
-      },
-      {
-        "rule_set": "geosite-telegram",
+        "rule_set": [
+          "geoip-telegram",
+          "geosite-telegram"
+        ],
         "outbound": "telegram"
       },
       {
@@ -311,11 +308,10 @@
         "outbound": "global"
       },
       {
-        "rule_set": "geoip-twitter",
-        "outbound": "twitter"
-      },
-      {
-        "rule_set": "geosite-twitter",
+        "rule_set": [
+          "geoip-twitter",
+          "geosite-twitter"
+        ],
         "outbound": "twitter"
       },
       {
@@ -354,19 +350,17 @@
         "outbound": "global"
       },
       {
-        "rule_set": "geoip-apple",
+        "rule_set": [
+          "geoip-apple",
+          "geosite-apple"
+        ],
         "outbound": "apple"
       },
       {
-        "rule_set": "geosite-apple",
-        "outbound": "apple"
-      },
-      {
-        "rule_set": "geoip-google",
-        "outbound": "google"
-      },
-      {
-        "rule_set": "geosite-google",
+        "rule_set": [
+          "geoip-google",
+          "geosite-google"
+        ],
         "outbound": "google"
       },
       {
@@ -382,11 +376,10 @@
         "outbound": "global"
       },
       {
-        "rule_set": "geoip-cn",
-        "outbound": "direct"
-      },
-      {
-        "rule_set": "geosite-cn",
+        "rule_set": [
+          "geoip-cn",
+          "geosite-cn"
+        ],
         "outbound": "direct"
       }
     ],
