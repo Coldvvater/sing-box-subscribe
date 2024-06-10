@@ -168,7 +168,7 @@
               "openaicomproductionae4b.blob.core.windows.net",
               "production-openaicom-storage.azureedge.net",
               "static.cloudflareinsights.com"
-            ]
+            ],
           },
           {
             "domain_suffix": [
@@ -193,13 +193,13 @@
               ".sentry.io",
               ".stripe.com",
               ".webpubsub.azure.com"
-            ]
+            ],
           },
           {
             "domain_keyword": [
               "chatgpt-async-webps-prod-eastus-",
               "openaicom-api"
-            ]
+            ],
           },
           {
             "domain": [
@@ -210,7 +210,7 @@
               "copilot.microsoft.com",
               "sydney.bing.com",
               "www.bingapis.com"
-            ]
+            ],
           },
           {
             "domain_suffix": ".clarity.ms",
@@ -224,13 +224,13 @@
               "gemini.google.com",
               "generativelanguage.googleapis.com",
               "makersuite.google.com"
-            ]
+            ],
           },
           {
             "domain_suffix": [
               ".anthropic.com",
               "claude.ai"
-            ]
+            ],
           },
           {
             "domain": "imagine.meta.com",
@@ -242,7 +242,7 @@
             "domain_suffix": [
               "grazie.ai",
               ".grazie.aws.intellij.net"
-            ]
+            ],
           },
           {
             "domain_suffix": "groq.com",
