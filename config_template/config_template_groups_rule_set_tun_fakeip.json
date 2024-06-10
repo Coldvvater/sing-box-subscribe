@@ -151,103 +151,107 @@
         "outbound": "direct"
       },
       {
-        "type": "logical",
-        "mode": "and",
-        "rules": [
-          {
-            "domain": [
-              "api.statsig.com",
-              "browser-intake-datadoghq.com",
-              "cdn.openai.com",
-              "chat.openai.com",
-              "chat.openai.com.cdn.cloudflare.net",
-              "ios.chat.openai.com",
-              "o33249.ingest.sentry.io",
-              "openai-api.arkoselabs.com",
-              "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net",
-              "openaicomproductionae4b.blob.core.windows.net",
-              "production-openaicom-storage.azureedge.net",
-              "static.cloudflareinsights.com"
-            ]
-          },
-          {
-            "domain_suffix": [
-              ".algolia.net",
-              ".auth0.co",
-              "chatgpt.com",
-              ".challenges.cloudflare.com",
-              ".client-api.arkoselabs.com",
-              ".events.statsigapi.net",
-              ".featuregates.org",
-              ".identrust.com",
-              ".intercom.io",
-              ".intercomcdn.com",
-              ".launchdarkly.com",
-              ".oaistatic.com",
-              ".oaiusercontent.com",
-              ".observeit.net",
-              ".openai.com",
-              ".openaiapi-site.azureedge.net",
-              ".openaicom.imgix.net",
-              ".segment.io",
-              ".sentry.io",
-              ".stripe.com",
-              ".webpubsub.azure.com"
-            ]
-          },
-          {
-            "domain_keyword": [
-              "chatgpt-async-webps-prod-eastus-",
-              "openaicom-api"
-            ]
-          },
-          {
-            "domain": [
-              "api.githubcopilot.com",
-              "bat.bing.com",
-              "c.bing.com",
-              "copilot-proxy.githubusercontent.com",
-              "copilot.microsoft.com",
-              "sydney.bing.com",
-              "www.bingapis.com"
-            ]
-          },
-          {
-            "domain_suffix": ".clarity.ms",
-          },
-          {
-            "domain": [
-              "ai.google.dev",
-              "aistudio.google.com",
-              "alkalimakersuite-pa.clients6.google.com",
-              "bard.google.com",
-              "gemini.google.com",
-              "generativelanguage.googleapis.com",
-              "makersuite.google.com"
-            ]
-          },
-          {
-            "domain_suffix": [
-              ".anthropic.com",
-              "claude.ai"
-            ],
-          },
-          {
-            "domain": "imagine.meta.com",
-          },
-          {
-            "domain_suffix": "meta.ai",
-          },
-          {
-            "domain_suffix": [
-              "grazie.ai",
-              ".grazie.aws.intellij.net"
-            ]
-          },
-          {
-            "domain_suffix": "groq.com",
-          }
+        "domain": [
+          "api.statsig.com",
+          "browser-intake-datadoghq.com",
+          "cdn.openai.com",
+          "chat.openai.com",
+          "chat.openai.com.cdn.cloudflare.net",
+          "ios.chat.openai.com",
+          "o33249.ingest.sentry.io",
+          "openai-api.arkoselabs.com",
+          "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net",
+          "openaicomproductionae4b.blob.core.windows.net",
+          "production-openaicom-storage.azureedge.net",
+          "static.cloudflareinsights.com"
         ],
+        "outbound": "ai"
+      },
+      {
+        "domain_suffix": [
+          ".algolia.net",
+          ".auth0.co",
+          "chatgpt.com",
+          ".challenges.cloudflare.com",
+          ".client-api.arkoselabs.com",
+          ".events.statsigapi.net",
+          ".featuregates.org",
+          ".identrust.com",
+          ".intercom.io",
+          ".intercomcdn.com",
+          ".launchdarkly.com",
+          ".oaistatic.com",
+          ".oaiusercontent.com",
+          ".observeit.net",
+          ".openai.com",
+          ".openaiapi-site.azureedge.net",
+          ".openaicom.imgix.net",
+          ".segment.io",
+          ".sentry.io",
+          ".stripe.com",
+          ".webpubsub.azure.com"
+        ],
+        "outbound": "ai"
+      },
+      {
+        "domain_keyword": [
+          "chatgpt-async-webps-prod-eastus-",
+          "openaicom-api"
+        ],
+        "outbound": "ai"
+      },
+      {
+        "domain": [
+          "api.githubcopilot.com",
+          "bat.bing.com",
+          "c.bing.com",
+          "copilot-proxy.githubusercontent.com",
+          "copilot.microsoft.com",
+          "sydney.bing.com",
+          "www.bingapis.com"
+        ],
+        "outbound": "ai"
+      },
+      {
+        "domain_suffix": ".clarity.ms",
+        "outbound": "ai"
+      },
+      {
+        "domain": [
+          "ai.google.dev",
+          "aistudio.google.com",
+          "alkalimakersuite-pa.clients6.google.com",
+          "bard.google.com",
+          "gemini.google.com",
+          "generativelanguage.googleapis.com",
+          "makersuite.google.com"
+        ],
+        "outbound": "ai"
+      },
+      {
+        "domain_suffix": [
+          ".anthropic.com",
+          "claude.ai"
+        ],
+        "outbound": "ai"
+      },
+      {
+        "domain": "imagine.meta.com",
+        "outbound": "ai"
+      },
+      {
+        "domain_suffix": "meta.ai",
+        "outbound": "ai"
+      },
+      {
+        "domain_suffix": [
+          "grazie.ai",
+          ".grazie.aws.intellij.net"
+        ],
+        "outbound": "ai"
+      },
+      {
+        "domain_suffix": "groq.com",
         "outbound": "ai"
       },
       {
