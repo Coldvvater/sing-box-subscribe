@@ -179,7 +179,7 @@
           "production-openaicom-storage.azureedge.net",
           "static.cloudflareinsights.com"
         ],
-        "outbound": "ai"
+        "outbound": "AIGC"
       },
       {
         "domain_suffix": [
@@ -206,14 +206,14 @@
           ".stripe.com",
           ".webpubsub.azure.com"
         ],
-        "outbound": "ai"
+        "outbound": "AIGC"
       },
       {
         "domain_keyword": [
           "chatgpt-async-webps-prod-eastus-",
           "openaicom-api"
         ],
-        "outbound": "ai"
+        "outbound": "AIGC"
       },
       {
         "domain": [
@@ -225,11 +225,11 @@
           "sydney.bing.com",
           "www.bingapis.com"
         ],
-        "outbound": "ai"
+        "outbound": "AIGC"
       },
       {
         "domain_suffix": ".clarity.ms",
-        "outbound": "ai"
+        "outbound": "AIGC"
       },
       {
         "domain": [
@@ -241,44 +241,44 @@
           "generativelanguage.googleapis.com",
           "makersuite.google.com"
         ],
-        "outbound": "ai"
+        "outbound": "AIGC"
       },
       {
         "domain_suffix": [
           ".anthropic.com",
           "claude.ai"
         ],
-        "outbound": "ai"
+        "outbound": "AIGC"
       },
       {
         "domain": "imagine.meta.com",
-        "outbound": "ai"
+        "outbound": "AIGC"
       },
       {
         "domain_suffix": "meta.ai",
-        "outbound": "ai"
+        "outbound": "AIGC"
       },
       {
         "domain_suffix": [
           "grazie.ai",
           ".grazie.aws.intellij.net"
         ],
-        "outbound": "ai"
+        "outbound": "AIGC"
       },
       {
         "domain_suffix": "perplexity.ai",
-        "outbound": "ai"
+        "outbound": "AIGC"
       },
       {
         "domain": [
           "chat.mistral.ai",
           "console.mistral.ai"
         ],
-        "outbound": "ai"
+        "outbound": "AIGC"
       },
       {
         "domain_suffix": "mistral.ai",
-        "outbound": "ai"
+        "outbound": "AIGC"
       },
       {
         "rule_set": "geosite-youtube",
@@ -290,10 +290,6 @@
           "geosite-netflix"
         ],
         "outbound": "NETFLIX"
-      },
-      {
-        "rule_set": "geosite-disney",
-        "outbound": "disney+"
       },
       {
         "rule_set": "mixed-emby",
@@ -338,7 +334,7 @@
           "geoip-twitter",
           "geosite-twitter"
         ],
-        "outbound": "x"
+        "outbound": "X"
       },
       {
         "domain": [
@@ -443,13 +439,6 @@
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/netflix.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-disney",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/disney.srs",
         "download_detour": "direct"
       },
       {
@@ -619,10 +608,13 @@
       "outbounds":[
         "hongkong",
         "taiwan",
-        "singapore",
         "japan",
+        "korea",
+        "singapore",
         "america",
-        "allserver"
+        "unitedkingdom",
+        "allserver",
+        "direct"
       ],
       "default": "allserver"
     },
@@ -630,26 +622,32 @@
       "tag":"GLOBAL",
       "type":"selector",
       "outbounds":[
+        "direct",
         "proxy",
         "hongkong",
         "taiwan",
-        "singapore",
         "japan",
+        "korea",
+        "singapore",
         "america",
-        "allserver",
-        "direct"
+        "unitedkingdom",
+        "allserver"
       ],
       "default": "direct"
     },
     {
-      "tag":"ai",
+      "tag":"AIGC",
       "type":"selector",
       "outbounds":[
-        "america",
-        "japan",
-        "singapore",
+        "proxy",
+        "hongkong",
         "taiwan",
-        "proxy"
+        "japan",
+        "korea",
+        "singapore",
+        "america",
+        "unitedkingdom",
+        "allserver"
       ],
       "default": "proxy"
     },
@@ -660,9 +658,11 @@
         "proxy",
         "hongkong",
         "taiwan",
-        "singapore",
         "japan",
+        "korea",
+        "singapore",
         "america",
+        "unitedkingdom",
         "allserver"
       ],
       "default": "proxy"
@@ -674,23 +674,11 @@
         "proxy",
         "hongkong",
         "taiwan",
-        "singapore",
         "japan",
-        "america",
-        "allserver"
-      ],
-      "default": "proxy"
-    },
-    {
-      "tag":"disney+",
-      "type":"selector",
-      "outbounds":[
-        "proxy",
-        "hongkong",
-        "taiwan",
+        "korea",
         "singapore",
-        "japan",
         "america",
+        "unitedkingdom",
         "allserver"
       ],
       "default": "proxy"
@@ -702,9 +690,11 @@
         "proxy",
         "hongkong",
         "taiwan",
-        "singapore",
         "japan",
+        "korea",
+        "singapore",
         "america",
+        "unitedkingdom",
         "allserver",
         "direct"
       ],
@@ -727,9 +717,11 @@
         "proxy",
         "hongkong",
         "taiwan",
-        "singapore",
         "japan",
+        "korea",
+        "singapore",
         "america",
+        "unitedkingdom",
         "allserver",
         "direct"
       ],
@@ -742,9 +734,11 @@
         "proxy",
         "hongkong",
         "taiwan",
-        "singapore",
         "japan",
+        "korea",
+        "singapore",
         "america",
+        "unitedkingdom",
         "allserver"
       ],
       "default": "proxy"
@@ -756,23 +750,27 @@
         "proxy",
         "hongkong",
         "taiwan",
-        "singapore",
         "japan",
+        "korea",
+        "singapore",
         "america",
+        "unitedkingdom",
         "allserver"
       ],
       "default": "proxy"
     },
     {
-      "tag": "x",
+      "tag": "X",
       "type": "selector",
       "outbounds": [
         "proxy",
         "hongkong",
         "taiwan",
-        "singapore",
         "japan",
+        "korea",
+        "singapore",
         "america",
+        "unitedkingdom",
         "allserver"
       ],
       "default": "proxy"
@@ -785,9 +783,11 @@
         "proxy",
         "hongkong",
         "taiwan",
-        "singapore",
         "japan",
+        "korea",
+        "singapore",
         "america",
+        "unitedkingdom",
         "allserver"
       ],
       "default": "direct"
@@ -799,9 +799,11 @@
         "proxy",
         "hongkong",
         "taiwan",
-        "singapore",
         "japan",
+        "korea",
+        "singapore",
         "america",
+        "unitedkingdom",
         "allserver",
         "direct"
       ],
@@ -815,9 +817,11 @@
         "proxy",
         "hongkong",
         "taiwan",
-        "singapore",
         "japan",
+        "korea",
+        "singapore",
         "america",
+        "unitedkingdom",
         "allserver"
       ],
       "default": "proxy"
@@ -830,9 +834,11 @@
         "proxy",
         "hongkong",
         "taiwan",
-        "singapore",
         "japan",
+        "korea",
+        "singapore",
         "america",
+        "unitedkingdom",
         "allserver"
       ],
       "default": "proxy"
@@ -847,7 +853,7 @@
         {"action":"include","keywords":["🇭🇰|HK|hk|香港|港|HongKong"]}
       ],
       "url": "http://www.gstatic.com/generate_204",
-      "interval": "10m",
+      "interval": "5m",
       "tolerance": 50
     },
     {
@@ -860,20 +866,7 @@
         {"action":"include","keywords":["🇹🇼|TW|tw|台湾|臺灣|台|Taiwan"]}
       ],
       "url": "http://www.gstatic.com/generate_204",
-      "interval": "10m",
-      "tolerance": 50
-    },
-    {
-      "tag":"singapore",
-      "type":"urltest",
-      "outbounds":[
-        "{all}"
-      ],
-      "filter":[
-        {"action":"include","keywords":["🇸🇬|SG|sg|新加坡|狮|Singapore"]}
-      ],
-      "url": "http://www.gstatic.com/generate_204",
-      "interval": "10m",
+      "interval": "5m",
       "tolerance": 50
     },
     {
@@ -886,7 +879,33 @@
         {"action":"include","keywords":["🇯🇵|JP|jp|日本|日|Japan"]}
       ],
       "url": "http://www.gstatic.com/generate_204",
-      "interval": "10m",
+      "interval": "5m",
+      "tolerance": 50
+    },
+    {
+      "tag":"korea",
+      "type":"urltest",
+      "outbounds":[
+        "{all}"
+      ],
+      "filter":[
+        {"action":"include","keywords":["🇰🇷|KR|kr|韩国|韓|Korea"]}
+      ],
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": "5m",
+      "tolerance": 50
+    },
+    {
+      "tag":"singapore",
+      "type":"urltest",
+      "outbounds":[
+        "{all}"
+      ],
+      "filter":[
+        {"action":"include","keywords":["🇸🇬|SG|sg|新加坡|狮|Singapore"]}
+      ],
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": "5m",
       "tolerance": 50
     },
     {
@@ -899,14 +918,26 @@
         {"action":"include","keywords":["🇺🇸|US|us|美国|美國|美|United States"]}
       ],
       "url": "http://www.gstatic.com/generate_204",
-      "interval": "10m",
+      "interval": "5m",
+      "tolerance": 50
+    },
+    {
+      "tag":"unitedkingdom",
+      "type":"urltest",
+      "outbounds":[
+        "{all}"
+      ],
+      "filter":[
+        {"action":"include","keywords":["🇬🇧|UK|uk|英国|英國|英|United Kingdom"]}
+      ],
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": "5m",
       "tolerance": 50
     },
     {
       "tag":"allserver",
       "type":"selector",
       "outbounds":[
-        "direct",
         "{all}"
       ],
       "filter":[
