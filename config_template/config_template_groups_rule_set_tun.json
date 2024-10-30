@@ -169,6 +169,10 @@
         "outbound": "emby"
       },
       {
+        "rule_set": "mixed-tiktok",
+        "outbound": "tiktok"
+      },
+      {
         "rule_set": "geosite-bahamut",
         "outbound": "taiwan"
       },
@@ -186,10 +190,6 @@
       {
         "rule_set": "geosite-spotify",
         "outbound": "spotify"
-      },
-      {
-        "rule_set": "mixed-tiktok",
-        "outbound": "tiktok"
       },
       {
         "rule_set": [
@@ -298,6 +298,13 @@
         "download_detour": "direct"
       },
       {
+        "tag": "mixed-tiktok",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/Coldvvater/sing-box-geosite@main/rule/TikTok.srs",
+        "download_detour": "direct"
+      },
+      {
         "tag": "geosite-bahamut",
         "type": "remote",
         "format": "binary",
@@ -330,13 +337,6 @@
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/spotify.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "mixed-tiktok",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/Coldvvater/sing-box-geosite@main/rule/TikTok.srs",
         "download_detour": "direct"
       },
       {
@@ -557,6 +557,22 @@
       "default": "proxy"
     },
     {
+      "tag":"tiktok",
+      "type":"selector",
+      "outbounds":[
+        "proxy",
+        "hongkong",
+        "taiwan",
+        "japan",
+        "korea",
+        "singapore",
+        "america",
+        "unitedkingdom",
+        "allserver"
+      ],
+      "default": "proxy"
+    },
+    {
       "tag":"bilibili",
       "type":"selector",
       "outbounds":[
@@ -580,22 +596,6 @@
         "unitedkingdom",
         "allserver",
         "direct"
-      ],
-      "default": "proxy"
-    },
-    {
-      "tag":"tiktok",
-      "type":"selector",
-      "outbounds":[
-        "proxy",
-        "hongkong",
-        "taiwan",
-        "japan",
-        "korea",
-        "singapore",
-        "america",
-        "unitedkingdom",
-        "allserver"
       ],
       "default": "proxy"
     },
