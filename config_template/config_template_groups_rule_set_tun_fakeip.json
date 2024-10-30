@@ -166,119 +166,8 @@
         "outbound": "direct"
       },
       {
-        "domain": [
-          "api.statsig.com",
-          "browser-intake-datadoghq.com",
-          "cdn.openai.com",
-          "chat.openai.com",
-          "chat.openai.com.cdn.cloudflare.net",
-          "ios.chat.openai.com",
-          "o33249.ingest.sentry.io",
-          "openai-api.arkoselabs.com",
-          "openaicomproductionae4b.blob.core.windows.net",
-          "production-openaicom-storage.azureedge.net",
-          "static.cloudflareinsights.com"
-        ],
-        "outbound": "AIGC"
-      },
-      {
-        "domain_suffix": [
-          ".algolia.net",
-          ".auth0.co",
-          ".azurefd.net",
-          "chatgpt.com",
-          ".challenges.cloudflare.com",
-          ".client-api.arkoselabs.com",
-          ".events.statsigapi.net",
-          ".featuregates.org",
-          ".identrust.com",
-          ".intercom.io",
-          ".intercomcdn.com",
-          ".launchdarkly.com",
-          ".oaistatic.com",
-          ".oaiusercontent.com",
-          ".observeit.net",
-          ".openai.com",
-          ".openaiapi-site.azureedge.net",
-          ".openaicom.imgix.net",
-          ".segment.io",
-          ".sentry.io",
-          ".stripe.com",
-          ".webpubsub.azure.com"
-        ],
-        "outbound": "AIGC"
-      },
-      {
-        "domain_keyword": [
-          "chatgpt-async-webps-prod-eastus-",
-          "openaicom-api"
-        ],
-        "outbound": "AIGC"
-      },
-      {
-        "domain": [
-          "api.githubcopilot.com",
-          "bat.bing.com",
-          "c.bing.com",
-          "copilot-proxy.githubusercontent.com",
-          "copilot.microsoft.com",
-          "sydney.bing.com",
-          "www.bingapis.com"
-        ],
-        "outbound": "AIGC"
-      },
-      {
-        "domain_suffix": ".clarity.ms",
-        "outbound": "AIGC"
-      },
-      {
-        "domain": [
-          "ai.google.dev",
-          "aistudio.google.com",
-          "alkalimakersuite-pa.clients6.google.com",
-          "bard.google.com",
-          "gemini.google.com",
-          "generativelanguage.googleapis.com",
-          "makersuite.google.com"
-        ],
-        "outbound": "AIGC"
-      },
-      {
-        "domain_suffix": [
-          ".anthropic.com",
-          "claude.ai"
-        ],
-        "outbound": "AIGC"
-      },
-      {
-        "domain": "imagine.meta.com",
-        "outbound": "AIGC"
-      },
-      {
-        "domain_suffix": "meta.ai",
-        "outbound": "AIGC"
-      },
-      {
-        "domain_suffix": [
-          "grazie.ai",
-          ".grazie.aws.intellij.net"
-        ],
-        "outbound": "AIGC"
-      },
-      {
-        "domain_suffix": "perplexity.ai",
-        "outbound": "AIGC"
-      },
-      {
-        "domain": [
-          "chat.mistral.ai",
-          "console.mistral.ai"
-        ],
-        "outbound": "AIGC"
-      },
-      {
-        "domain_suffix": "mistral.ai",
-        "outbound": "AIGC"
+        "rule_set": "geosite-category-ai-chat-!cn",
+        "outbound": "AI"
       },
       {
         "rule_set": "geosite-youtube",
@@ -294,6 +183,10 @@
       {
         "rule_set": "mixed-emby",
         "outbound": "emby"
+      },
+      {
+        "rule_set": "mixed-tiktok",
+        "outbound": "tiktok"
       },
       {
         "rule_set": "geosite-bahamut",
@@ -315,10 +208,6 @@
         "outbound": "spotify"
       },
       {
-        "rule_set": "mixed-tiktok",
-        "outbound": "tiktok"
-      },
-      {
         "rule_set": [
           "geoip-telegram",
           "geosite-telegram"
@@ -337,39 +226,8 @@
         "outbound": "X"
       },
       {
-        "domain": [
-          "amp-api.podcasts.apple.com",
-          "beta.music.apple.com",
-          "books.itunes.apple.com",
-          "facetime.apple.com",
-          "lookup-api.apple.com",
-          "radio.itunes.apple.com",
-          "apps.apple.com",
-          "books.apple.com",
-          "itunes.apple.com",
-          "tv.apple.com",
-          "gateway.icloud.com",
-          "news-assets.apple.com",
-          "news-client.apple.com",
-          "news-client-search.apple.com",
-          "news-edge.apple.com",
-          "news-events.apple.com",
-          "apple.comscoreresearch.com",
-          "beta.apple.com",
-          "testflight.apple.com"
-        ],
-        "outbound": "proxy"
-      },
-      {
-        "domain_suffix": [
-          "apple.news",
-          "appsto.re"
-        ],
-        "outbound": "proxy"
-      },
-      {
-        "domain_keyword": "testflight",
-        "outbound": "proxy"
+        "rule_set": "mixed-appleproxyservice",
+        "outbound": "america"
       },
       {
         "rule_set": [
@@ -421,6 +279,13 @@
         "download_detour": "direct"
       },
       {
+        "tag": "geosite-category-ai-chat-!cn",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ai-chat-!cn.srs",
+        "download_detour": "direct"
+      },
+      {
         "tag": "geosite-youtube",
         "type": "remote",
         "format": "binary",
@@ -446,6 +311,13 @@
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/Coldvvater/sing-box-geosite@main/rule/Emby.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "mixed-tiktok",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/Coldvvater/sing-box-geosite@main/rule/TikTok.srs",
         "download_detour": "direct"
       },
       {
@@ -484,13 +356,6 @@
         "download_detour": "direct"
       },
       {
-        "tag": "mixed-tiktok",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/Coldvvater/sing-box-geosite@main/rule/TikTok.srs",
-        "download_detour": "direct"
-      },
-      {
         "tag": "geoip-telegram",
         "type": "remote",
         "format": "binary",
@@ -523,6 +388,13 @@
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/twitter.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "mixed-appleproxyservice",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/Coldvvater/sing-box-geosite@main/rule/AppleProxyService.srs",
         "download_detour": "direct"
       },
       {
@@ -636,7 +508,7 @@
       "default": "direct"
     },
     {
-      "tag":"AIGC",
+      "tag":"AI",
       "type":"selector",
       "outbounds":[
         "proxy",
@@ -701,6 +573,22 @@
       "default": "proxy"
     },
     {
+      "tag":"tiktok",
+      "type":"selector",
+      "outbounds":[
+        "proxy",
+        "hongkong",
+        "taiwan",
+        "japan",
+        "korea",
+        "singapore",
+        "america",
+        "unitedkingdom",
+        "allserver"
+      ],
+      "default": "proxy"
+    },
+    {
       "tag":"bilibili",
       "type":"selector",
       "outbounds":[
@@ -724,22 +612,6 @@
         "unitedkingdom",
         "allserver",
         "direct"
-      ],
-      "default": "proxy"
-    },
-    {
-      "tag":"tiktok",
-      "type":"selector",
-      "outbounds":[
-        "proxy",
-        "hongkong",
-        "taiwan",
-        "japan",
-        "korea",
-        "singapore",
-        "america",
-        "unitedkingdom",
-        "allserver"
       ],
       "default": "proxy"
     },
