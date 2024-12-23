@@ -171,7 +171,7 @@
       },
       {
         "rule_set": "geosite-youtube",
-        "outbound": "youtube"
+        "outbound": "YouTube"
       },
       {
         "rule_set": [
@@ -182,15 +182,15 @@
       },
       {
         "rule_set": "mixed-emby",
-        "outbound": "emby"
+        "outbound": "Emby"
       },
       {
         "rule_set": "mixed-tiktok",
-        "outbound": "tiktok"
+        "outbound": "TikTok"
       },
       {
         "rule_set": "geosite-bahamut",
-        "outbound": "taiwan"
+        "outbound": "TaiWan"
       },
       {
         "rule_set": "geosite-biliintl",
@@ -205,14 +205,18 @@
       },
       {
         "rule_set": "geosite-spotify",
-        "outbound": "spotify"
+        "outbound": "Spotify"
+      },
+      {
+        "rule_set": "mixed-wechat",
+        "outbound": "direct"
       },
       {
         "rule_set": [
           "geoip-telegram",
           "geosite-telegram"
         ],
-        "outbound": "telegram"
+        "outbound": "Telegram"
       },
       {
         "rule_set": "geosite-github",
@@ -227,29 +231,29 @@
       },
       {
         "rule_set": "mixed-appleproxyservice",
-        "outbound": "america"
+        "outbound": "America"
       },
       {
         "rule_set": [
           "geoip-apple",
           "geosite-apple"
         ],
-        "outbound": "apple"
+        "outbound": "Apple"
       },
       {
         "rule_set": [
           "geoip-google",
           "geosite-google"
         ],
-        "outbound": "google"
+        "outbound": "Google"
       },
       {
         "rule_set": "geosite-microsoft",
-        "outbound": "microsoft"
+        "outbound": "Microsoft"
       },
       {
         "rule_set": "geosite-category-games",
-        "outbound": "games"
+        "outbound": "Games"
       },
       {
         "rule_set": "geosite-geolocation-!cn",
@@ -353,6 +357,13 @@
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/spotify.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "mixed-wechat",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/Coldvvater/sing-box-geosite@main/rule//WeChat.srs",
         "download_detour": "direct"
       },
       {
@@ -461,12 +472,12 @@
         "download_detour": "direct"
       }
     ],
-    "final": "final",
+    "final": "Final",
     "auto_detect_interface": true
   },
   "outbounds": [
     {
-      "tag":"final",
+      "tag":"Final",
       "type":"selector",
       "outbounds":[
         "proxy",
@@ -478,17 +489,17 @@
       "tag":"proxy",
       "type":"selector",
       "outbounds":[
-        "hongkong",
-        "taiwan",
-        "japan",
-        "korea",
-        "singapore",
-        "america",
-        "unitedkingdom",
-        "allserver",
+        "HongKong",
+        "TaiWan",
+        "Japan",
+        "Korea",
+        "Singapore",
+        "America",
+        "UnitedKingdom",
+        "AllServer",
         "direct"
       ],
-      "default": "allserver"
+      "default": "AllServer"
     },
     {
       "tag":"GLOBAL",
@@ -496,14 +507,14 @@
       "outbounds":[
         "direct",
         "proxy",
-        "hongkong",
-        "taiwan",
-        "japan",
-        "korea",
-        "singapore",
-        "america",
-        "unitedkingdom",
-        "allserver"
+        "HongKong",
+        "TaiWan",
+        "Japan",
+        "Korea",
+        "Singapore",
+        "America",
+        "UnitedKingdom",
+        "AllServer"
       ],
       "default": "direct"
     },
@@ -512,30 +523,30 @@
       "type":"selector",
       "outbounds":[
         "proxy",
-        "hongkong",
-        "taiwan",
-        "japan",
-        "korea",
-        "singapore",
-        "america",
-        "unitedkingdom",
-        "allserver"
+        "HongKong",
+        "TaiWan",
+        "Japan",
+        "Korea",
+        "Singapore",
+        "America",
+        "UnitedKingdom",
+        "AllServer"
       ],
       "default": "proxy"
     },
     {
-      "tag":"youtube",
+      "tag":"YouTube",
       "type":"selector",
       "outbounds":[
         "proxy",
-        "hongkong",
-        "taiwan",
-        "japan",
-        "korea",
-        "singapore",
-        "america",
-        "unitedkingdom",
-        "allserver"
+        "HongKong",
+        "TaiWan",
+        "Japan",
+        "Korea",
+        "Singapore",
+        "America",
+        "UnitedKingdom",
+        "AllServer"
       ],
       "default": "proxy"
     },
@@ -544,47 +555,47 @@
       "type":"selector",
       "outbounds":[
         "proxy",
-        "hongkong",
-        "taiwan",
-        "japan",
-        "korea",
-        "singapore",
-        "america",
-        "unitedkingdom",
-        "allserver"
+        "HongKong",
+        "TaiWan",
+        "Japan",
+        "Korea",
+        "Singapore",
+        "America",
+        "UnitedKingdom",
+        "AllServer"
       ],
       "default": "proxy"
     },
     {
-      "tag": "emby",
+      "tag":"Emby",
       "type": "selector",
       "outbounds": [
         "proxy",
-        "hongkong",
-        "taiwan",
-        "japan",
-        "korea",
-        "singapore",
-        "america",
-        "unitedkingdom",
-        "allserver",
+        "HongKong",
+        "TaiWan",
+        "Japan",
+        "Korea",
+        "Singapore",
+        "America",
+        "UnitedKingdom",
+        "AllServer",
         "direct"
       ],
       "default": "proxy"
     },
     {
-      "tag":"tiktok",
+      "tag":"TikTok",
       "type":"selector",
       "outbounds":[
         "proxy",
-        "hongkong",
-        "taiwan",
-        "japan",
-        "korea",
-        "singapore",
-        "america",
-        "unitedkingdom",
-        "allserver"
+        "HongKong",
+        "TaiWan",
+        "Japan",
+        "Korea",
+        "Singapore",
+        "America",
+        "UnitedKingdom",
+        "AllServer"
       ],
       "default": "proxy"
     },
@@ -593,41 +604,41 @@
       "type":"selector",
       "outbounds":[
         "direct",
-        "hongkong",
-        "taiwan"
+        "HongKong",
+        "TaiWan"
       ],
       "default": "direct"
     },
     {
-      "tag":"spotify",
+      "tag":"Spotify",
       "type":"selector",
       "outbounds":[
         "proxy",
-        "hongkong",
-        "taiwan",
-        "japan",
-        "korea",
-        "singapore",
-        "america",
-        "unitedkingdom",
-        "allserver",
+        "HongKong",
+        "TaiWan",
+        "Japan",
+        "Korea",
+        "Singapore",
+        "America",
+        "UnitedKingdom",
+        "AllServer",
         "direct"
       ],
       "default": "proxy"
     },
     {
-      "tag":"telegram",
+      "tag":"Telegram",
       "type":"selector",
       "outbounds":[
         "proxy",
-        "hongkong",
-        "taiwan",
-        "japan",
-        "korea",
-        "singapore",
-        "america",
-        "unitedkingdom",
-        "allserver"
+        "HongKong",
+        "TaiWan",
+        "Japan",
+        "Korea",
+        "Singapore",
+        "America",
+        "UnitedKingdom",
+        "AllServer"
       ],
       "default": "proxy"
     },
@@ -636,87 +647,87 @@
       "type": "selector",
       "outbounds": [
         "proxy",
-        "hongkong",
-        "taiwan",
-        "japan",
-        "korea",
-        "singapore",
-        "america",
-        "unitedkingdom",
-        "allserver"
+        "HongKong",
+        "TaiWan",
+        "Japan",
+        "Korea",
+        "Singapore",
+        "America",
+        "UnitedKingdom",
+        "AllServer"
       ],
       "default": "proxy"
     },
     {
-      "tag":"apple",
+      "tag":"Apple",
       "type":"selector",
       "outbounds":[
         "direct",
         "proxy",
-        "hongkong",
-        "taiwan",
-        "japan",
-        "korea",
-        "singapore",
-        "america",
-        "unitedkingdom",
-        "allserver"
+        "HongKong",
+        "TaiWan",
+        "Japan",
+        "Korea",
+        "Singapore",
+        "America",
+        "UnitedKingdom",
+        "AllServer"
       ],
       "default": "direct"
     },
     {
-      "tag":"google",
+      "tag":"Google",
       "type":"selector",
       "outbounds":[
         "proxy",
-        "hongkong",
-        "taiwan",
-        "japan",
-        "korea",
-        "singapore",
-        "america",
-        "unitedkingdom",
-        "allserver",
+        "HongKong",
+        "TaiWan",
+        "Japan",
+        "Korea",
+        "Singapore",
+        "America",
+        "UnitedKingdom",
+        "AllServer",
         "direct"
       ],
       "default": "proxy"
     },
     {
-      "tag":"microsoft",
+      "tag":"Microsoft",
       "type":"selector",
       "outbounds":[
         "direct",
         "proxy",
-        "hongkong",
-        "taiwan",
-        "japan",
-        "korea",
-        "singapore",
-        "america",
-        "unitedkingdom",
-        "allserver"
+        "HongKong",
+        "TaiWan",
+        "Japan",
+        "Korea",
+        "Singapore",
+        "America",
+        "UnitedKingdom",
+        "AllServer"
       ],
       "default": "proxy"
     },
     {
-      "tag":"games",
+      "tag":"Games",
       "type":"selector",
       "outbounds":[
         "direct",
         "proxy",
-        "hongkong",
-        "taiwan",
-        "japan",
-        "korea",
-        "singapore",
-        "america",
-        "unitedkingdom",
-        "allserver"
+        "HongKong",
+        "TaiWan",
+        "Japan",
+        "Korea",
+        "Singapore",
+        "America",
+        "UnitedKingdom",
+        "AllServer"
       ],
       "default": "proxy"
     },
     {
-      "tag":"hongkong",
+      "tag":"HongKong",
       "type":"urltest",
       "outbounds":[
         "{all}"
@@ -729,7 +740,7 @@
       "tolerance": 50
     },
     {
-      "tag":"taiwan",
+      "tag":"TaiWan",
       "type":"urltest",
       "outbounds":[
         "{all}"
@@ -742,7 +753,7 @@
       "tolerance": 50
     },
     {
-      "tag":"japan",
+      "tag":"Japan",
       "type":"urltest",
       "outbounds":[
         "{all}"
@@ -755,7 +766,7 @@
       "tolerance": 50
     },
     {
-      "tag":"korea",
+      "tag":"Korea",
       "type":"urltest",
       "outbounds":[
         "{all}"
@@ -768,7 +779,7 @@
       "tolerance": 50
     },
     {
-      "tag":"singapore",
+      "tag":"Singapore",
       "type":"urltest",
       "outbounds":[
         "{all}"
@@ -781,7 +792,7 @@
       "tolerance": 50
     },
     {
-      "tag":"america",
+      "tag":"America",
       "type":"urltest",
       "outbounds":[
         "{all}"
@@ -794,7 +805,7 @@
       "tolerance": 50
     },
     {
-      "tag":"unitedkingdom",
+      "tag":"UnitedKingdom",
       "type":"urltest",
       "outbounds":[
         "{all}"
@@ -807,7 +818,7 @@
       "tolerance": 50
     },
     {
-      "tag":"allserver",
+      "tag":"AllServer",
       "type":"selector",
       "outbounds":[
         "{all}"
