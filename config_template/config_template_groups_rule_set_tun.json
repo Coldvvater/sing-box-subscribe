@@ -440,7 +440,7 @@
   ],
   "route": {
     "auto_detect_interface": true,
-    "final": "proxy",
+    "final": "Final",
     "rules": [
       {
         "inbound": ["tun-in", "mixed-in"],
