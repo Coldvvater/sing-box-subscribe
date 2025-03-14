@@ -96,13 +96,17 @@
       "type":"selector",
       "outbounds":[
         "HongKong",
+        "HK-Auto",
         "TaiWan",
+        "TW-Auto",
         "Japan",
-        "Korea",
+        "JP-Auto",
         "Singapore",
+        "SG-Auto",
         "America",
-        "UnitedKingdom",
+        "US-Auto",
         "AllServer",
+        "All-Auto",
         "direct"
       ],
       "default": "AllServer"
@@ -114,13 +118,17 @@
         "direct",
         "proxy",
         "HongKong",
+        "HK-Auto",
         "TaiWan",
+        "TW-Auto",
         "Japan",
-        "Korea",
+        "JP-Auto",
         "Singapore",
+        "SG-Auto",
         "America",
-        "UnitedKingdom",
-        "AllServer"
+        "US-Auto",
+        "AllServer",
+        "All-Auto"
       ],
       "default": "direct"
     },
@@ -130,13 +138,17 @@
       "outbounds":[
         "proxy",
         "HongKong",
+        "HK-Auto",
         "TaiWan",
+        "TW-Auto",
         "Japan",
-        "Korea",
+        "JP-Auto",
         "Singapore",
+        "SG-Auto",
         "America",
-        "UnitedKingdom",
-        "AllServer"
+        "US-Auto",
+        "AllServer",
+        "All-Auto"
       ],
       "default": "proxy"
     },
@@ -146,13 +158,17 @@
       "outbounds":[
         "proxy",
         "HongKong",
+        "HK-Auto",
         "TaiWan",
+        "TW-Auto",
         "Japan",
-        "Korea",
+        "JP-Auto",
         "Singapore",
+        "SG-Auto",
         "America",
-        "UnitedKingdom",
-        "AllServer"
+        "US-Auto",
+        "AllServer",
+        "All-Auto"
       ],
       "default": "proxy"
     },
@@ -162,13 +178,17 @@
       "outbounds":[
         "proxy",
         "HongKong",
+        "HK-Auto",
         "TaiWan",
+        "TW-Auto",
         "Japan",
-        "Korea",
+        "JP-Auto",
         "Singapore",
+        "SG-Auto",
         "America",
-        "UnitedKingdom",
-        "AllServer"
+        "US-Auto",
+        "AllServer",
+        "All-Auto"
       ],
       "default": "proxy"
     },
@@ -178,13 +198,17 @@
       "outbounds": [
         "proxy",
         "HongKong",
+        "HK-Auto",
         "TaiWan",
+        "TW-Auto",
         "Japan",
-        "Korea",
+        "JP-Auto",
         "Singapore",
+        "SG-Auto",
         "America",
-        "UnitedKingdom",
+        "US-Auto",
         "AllServer",
+        "All-Auto",
         "direct"
       ],
       "default": "proxy"
@@ -195,13 +219,17 @@
       "outbounds":[
         "proxy",
         "HongKong",
+        "HK-Auto",
         "TaiWan",
+        "TW-Auto",
         "Japan",
-        "Korea",
+        "JP-Auto",
         "Singapore",
+        "SG-Auto",
         "America",
-        "UnitedKingdom",
-        "AllServer"
+        "US-Auto",
+        "AllServer",
+        "All-Auto"
       ],
       "default": "proxy"
     },
@@ -211,7 +239,9 @@
       "outbounds":[
         "direct",
         "HongKong",
-        "TaiWan"
+        "HK-Auto",
+        "TaiWan",
+        "TW-Auto"
       ],
       "default": "direct"
     },
@@ -221,14 +251,38 @@
       "outbounds":[
         "proxy",
         "HongKong",
+        "HK-Auto",
         "TaiWan",
+        "TW-Auto",
         "Japan",
-        "Korea",
+        "JP-Auto",
         "Singapore",
+        "SG-Auto",
         "America",
-        "UnitedKingdom",
+        "US-Auto",
         "AllServer",
+        "All-Auto",
         "direct"
+      ],
+      "default": "proxy"
+    },
+    {
+      "tag":"Streaming",
+      "type":"selector",
+      "outbounds":[
+        "proxy",
+        "HongKong",
+        "HK-Auto",
+        "TaiWan",
+        "TW-Auto",
+        "Japan",
+        "JP-Auto",
+        "Singapore",
+        "SG-Auto",
+        "America",
+        "US-Auto",
+        "AllServer",
+        "All-Auto"
       ],
       "default": "proxy"
     },
@@ -238,13 +292,17 @@
       "outbounds":[
         "proxy",
         "HongKong",
+        "HK-Auto",
         "TaiWan",
+        "TW-Auto",
         "Japan",
-        "Korea",
+        "JP-Auto",
         "Singapore",
+        "SG-Auto",
         "America",
-        "UnitedKingdom",
-        "AllServer"
+        "US-Auto",
+        "AllServer",
+        "All-Auto"
       ],
       "default": "proxy"
     },
@@ -254,13 +312,17 @@
       "outbounds": [
         "proxy",
         "HongKong",
+        "HK-Auto",
         "TaiWan",
+        "TW-Auto",
         "Japan",
-        "Korea",
+        "JP-Auto",
         "Singapore",
+        "SG-Auto",
         "America",
-        "UnitedKingdom",
-        "AllServer"
+        "US-Auto",
+        "AllServer",
+        "All-Auto"
       ],
       "default": "proxy"
     },
@@ -271,13 +333,17 @@
         "direct",
         "proxy",
         "HongKong",
+        "HK-Auto",
         "TaiWan",
+        "TW-Auto",
         "Japan",
-        "Korea",
+        "JP-Auto",
         "Singapore",
+        "SG-Auto",
         "America",
-        "UnitedKingdom",
-        "AllServer"
+        "US-Auto",
+        "AllServer",
+        "All-Auto"
       ],
       "default": "direct"
     },
@@ -287,13 +353,17 @@
       "outbounds":[
         "proxy",
         "HongKong",
+        "HK-Auto",
         "TaiWan",
+        "TW-Auto",
         "Japan",
-        "Korea",
+        "JP-Auto",
         "Singapore",
+        "SG-Auto",
         "America",
-        "UnitedKingdom",
+        "US-Auto",
         "AllServer",
+        "All-Auto",
         "direct"
       ],
       "default": "proxy"
@@ -305,13 +375,17 @@
         "direct",
         "proxy",
         "HongKong",
+        "HK-Auto",
         "TaiWan",
+        "TW-Auto",
         "Japan",
-        "Korea",
+        "JP-Auto",
         "Singapore",
+        "SG-Auto",
         "America",
-        "UnitedKingdom",
-        "AllServer"
+        "US-Auto",
+        "AllServer",
+        "All-Auto"
       ],
       "default": "proxy"
     },
@@ -322,18 +396,82 @@
         "direct",
         "proxy",
         "HongKong",
+        "HK-Auto",
         "TaiWan",
+        "TW-Auto",
         "Japan",
-        "Korea",
+        "JP-Auto",
         "Singapore",
+        "SG-Auto",
         "America",
-        "UnitedKingdom",
-        "AllServer"
+        "US-Auto",
+        "AllServer",
+        "All-Auto"
       ],
       "default": "proxy"
     },
     {
       "tag":"HongKong",
+      "type":"selector",
+      "outbounds":[
+        "{all}"
+      ],
+      "filter":[
+        {"action":"include","keywords":["🇭🇰|HK|hk|香港|港|HongKong"]}
+      ]
+    },
+    {
+      "tag":"TaiWan",
+      "type":"selector",
+      "outbounds":[
+        "{all}"
+      ],
+      "filter":[
+        {"action":"include","keywords":["🇹🇼|TW|tw|台湾|臺灣|台|Taiwan"]}
+      ]
+    },
+    {
+      "tag":"Singapore",
+      "type":"selector",
+      "outbounds":[
+        "{all}"
+      ],
+      "filter":[
+        {"action":"include","keywords":["🇸🇬|SG|sg|新加坡|狮|Singapore"]}
+      ]
+    },
+    {
+      "tag":"Japan",
+      "type":"selector",
+      "outbounds":[
+        "{all}"
+      ],
+      "filter":[
+        {"action":"include","keywords":["🇯🇵|JP|jp|日本|日|Japan"]}
+      ]
+    },
+    {
+      "tag":"America",
+      "type":"selector",
+      "outbounds":[
+        "{all}"
+      ],
+      "filter":[
+        {"action":"include","keywords":["🇺🇸|US|us|美国|美|United States"]}
+      ]
+    },
+    {
+      "tag":"AllServer",
+      "type":"selector",
+      "outbounds":[
+        "{all}"
+      ],
+      "filter":[
+        {"action":"exclude","keywords":["Traffic|Expire"]}
+      ]
+    },
+    {
+      "tag":"HK-Auto",
       "type":"urltest",
       "outbounds":[
         "{all}"
@@ -346,7 +484,7 @@
       "tolerance": 50
     },
     {
-      "tag":"TaiWan",
+      "tag":"TW-Auto",
       "type":"urltest",
       "outbounds":[
         "{all}"
@@ -359,7 +497,7 @@
       "tolerance": 50
     },
     {
-      "tag":"Japan",
+      "tag":"JP-Auto",
       "type":"urltest",
       "outbounds":[
         "{all}"
@@ -372,20 +510,7 @@
       "tolerance": 50
     },
     {
-      "tag":"Korea",
-      "type":"urltest",
-      "outbounds":[
-        "{all}"
-      ],
-      "filter":[
-        {"action":"include","keywords":["🇰🇷|KR|kr|韩国|韓|Korea"]}
-      ],
-      "url": "http://www.gstatic.com/generate_204",
-      "interval": "5m",
-      "tolerance": 50
-    },
-    {
-      "tag":"Singapore",
+      "tag":"SG-Auto",
       "type":"urltest",
       "outbounds":[
         "{all}"
@@ -398,7 +523,7 @@
       "tolerance": 50
     },
     {
-      "tag":"America",
+      "tag":"US-Auto",
       "type":"urltest",
       "outbounds":[
         "{all}"
@@ -411,27 +536,17 @@
       "tolerance": 50
     },
     {
-      "tag":"UnitedKingdom",
+      "tag":"All-Auto",
       "type":"urltest",
       "outbounds":[
         "{all}"
       ],
       "filter":[
-        {"action":"include","keywords":["🇬🇧|UK|uk|英国|英國|英|United Kingdom"]}
+        {"action":"exclude","keywords":["Traffic|Expire"]}
       ],
       "url": "http://www.gstatic.com/generate_204",
-      "interval": "5m",
+      "interval": "10m",
       "tolerance": 50
-    },
-    {
-      "tag":"AllServer",
-      "type":"selector",
-      "outbounds":[
-        "{all}"
-      ],
-      "filter":[
-        {"action":"exclude","keywords":["Traffic|Expire"]}
-      ]
     },
     {
       "type": "direct",
@@ -523,7 +638,7 @@
       },
       {
         "rule_set": "geosite-biliintl",
-        "outbound": "proxy"
+        "outbound": "Streaming"
       },
       {
         "rule_set": [
@@ -535,6 +650,10 @@
       {
         "rule_set": "geosite-spotify",
         "outbound": "Spotify"
+      },
+      {
+        "rule_set": "mixed-proxymedia",
+        "outbound": "Streaming"
       },
       {
         "rule_set": "mixed-wechat",
@@ -686,6 +805,13 @@
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/spotify.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "mixed-proxymedia",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/Coldvvater/Mononoke@master/sing-box/Rules/ProxyMedia.srs",
         "download_detour": "direct"
       },
       {
