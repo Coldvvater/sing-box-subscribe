@@ -42,18 +42,15 @@
     "rules": [
       {
         "outbound": "any",
-        "action": "route",
         "server": "ali",
         "disable_cache": true
       },
       {
         "clash_mode": "Direct",
-        "action": "route",
         "server": "ali"
       },
       {
         "clash_mode": "Global",
-        "action": "route",
         "server": "fakeip"
       },
       {
@@ -65,13 +62,11 @@
           "A",
           "AAAA"
         ],
-        "action": "route",
         "server": "fakeip",
         "rewrite_ttl": 1
       },
       {
         "rule_set": "geosite-cn",
-        "action": "route",
         "server": "ali"
       }
     ],
@@ -582,7 +577,6 @@
             ]
           }
         ],
-        "action": "route",
         "outbound": "proxy"
       },
       {
