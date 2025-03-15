@@ -112,27 +112,6 @@
       "default": "AllServer"
     },
     {
-      "tag":"GLOBAL",
-      "type":"selector",
-      "outbounds":[
-        "direct",
-        "proxy",
-        "HongKong",
-        "HK-Auto",
-        "TaiWan",
-        "TW-Auto",
-        "Japan",
-        "JP-Auto",
-        "Singapore",
-        "SG-Auto",
-        "America",
-        "US-Auto",
-        "AllServer",
-        "All-Auto"
-      ],
-      "default": "direct"
-    },
-    {
       "tag":"AI",
       "type":"selector",
       "outbounds":[
@@ -547,6 +526,27 @@
       "url": "http://www.gstatic.com/generate_204",
       "interval": "5m",
       "tolerance": 50
+    },
+    {
+      "tag":"GLOBAL",
+      "type":"selector",
+      "outbounds":[
+        "direct",
+        "proxy",
+        "HongKong",
+        "HK-Auto",
+        "TaiWan",
+        "TW-Auto",
+        "Japan",
+        "JP-Auto",
+        "Singapore",
+        "SG-Auto",
+        "America",
+        "US-Auto",
+        "AllServer",
+        "All-Auto"
+      ],
+      "default": "direct"
     },
     {
       "type": "direct",
