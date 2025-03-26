@@ -838,7 +838,7 @@
         "tag": "mixed-wechat",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/Coldvvater/sing-box-geosite@main/rule//WeChat.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/Coldvvater/sing-box-geosite@main/rule/WeChat.srs",
         "download_detour": "direct"
       },
       {
