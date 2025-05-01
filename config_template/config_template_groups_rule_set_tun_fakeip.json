@@ -192,6 +192,26 @@
       "default": "proxy"
     },
     {
+      "tag":"Disney+",
+      "type":"selector",
+      "outbounds":[
+        "proxy",
+        "HongKong",
+        "HK-Auto",
+        "TaiWan",
+        "TW-Auto",
+        "Japan",
+        "JP-Auto",
+        "Singapore",
+        "SG-Auto",
+        "America",
+        "US-Auto",
+        "AllServer",
+        "All-Auto"
+      ],
+      "default": "proxy"
+    },
+    {
       "tag":"Emby",
       "type": "selector",
       "outbounds": [
@@ -645,6 +665,10 @@
         "outbound": "NETFLIX"
       },
       {
+        "rule_set": "geosite-disney",
+        "outbound": "Disney+"
+      },
+      {
         "rule_set": "mixed-emby",
         "outbound": "Emby"
       },
@@ -776,6 +800,13 @@
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/netflix.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geosite-disney",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/disney.srs",
         "download_detour": "direct"
       },
       {
