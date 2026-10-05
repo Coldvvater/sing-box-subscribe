@@ -134,6 +134,7 @@
       {"action": "sniff"},
       {"type": "logical","mode": "or","rules":[{"port":53},{"protocol": "dns"}],"action": "hijack-dns"},
       {"clash_mode": "Direct","action": "route","outbound": "Direct"},
+      {"domain": ["amp-api.podcasts.apple.com"],"action": "route","outbound": "Proxy"},
       {"rule_set": ["AppleCN"],"action": "route","outbound": "Direct"},
       {"type": "logical","mode": "and","rules": [{"clash_mode": "AllowAds","invert": true},{"rule_set": ["Reject","Ads_AWAvenue"]}],"action": "reject"},
       {"domain_suffix": ["duolingo.cn"],"action": "route","outbound": "Direct"},
