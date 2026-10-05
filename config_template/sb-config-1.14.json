@@ -131,17 +131,12 @@
     "find_process": true,
     "final": "Proxy",
     "rules": [
-      {
-        "domain_suffix": [
-          "duolingo.cn"
-        ],
-        "outbound": "direct"
-      }
       {"action": "sniff"},
       {"type": "logical","mode": "or","rules":[{"port":53},{"protocol": "dns"}],"action": "hijack-dns"},
       {"clash_mode": "Direct","action": "route","outbound": "Direct"},
       {"rule_set": ["AppleCN"],"action": "route","outbound": "Direct"},
       {"type": "logical","mode": "and","rules": [{"clash_mode": "AllowAds","invert": true},{"rule_set": ["Reject","Ads_AWAvenue"]}],"action": "reject"},
+      {"domain_suffix": ["duolingo.cn"],"action": "route","outbound": "Direct"},
       {"rule_set": ["AI"],"action": "route","outbound": "AI"},
       {"rule_set": ["Telegram"],"action": "route","outbound": "Telegram"},
       {"rule_set": ["Twitter", "Facebook"],"action": "route","outbound": "Social"},
