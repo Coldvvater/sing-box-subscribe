@@ -131,6 +131,12 @@
     "find_process": true,
     "final": "Proxy",
     "rules": [
+      {
+        "domain_suffix": [
+          "duolingo.cn"
+        ],
+        "outbound": "direct"
+      }
       {"action": "sniff"},
       {"type": "logical","mode": "or","rules":[{"port":53},{"protocol": "dns"}],"action": "hijack-dns"},
       {"clash_mode": "Direct","action": "route","outbound": "Direct"},
